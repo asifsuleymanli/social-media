@@ -13,9 +13,9 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    private final String secret = "MySuperSecretKeyForJwtThatShouldBeLongEnough123!"; // Ən az 32 simvol
+    private final String secret = "MySuperSecretKeyForJwtThatShouldBeLongEnough123!"; 
     private final Key key = Keys.hmacShaKeyFor(secret.getBytes());
-    private final long expirationMillis = 1000 * 60 * 60 * 24; // 24 saat
+    private final long expirationMillis = 1000 * 60 * 60 * 24; 
 
     public String generateToken(String username) {
         return Jwts.builder()
