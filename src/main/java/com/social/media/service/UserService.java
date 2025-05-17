@@ -29,7 +29,7 @@ public class UserService {
         return userRepository.existsByEmail(email);
     }
 
-    // Burada authenticate metodu əlavə olunur
+    
     public Optional<User> authenticate(String username, String password) {
         Optional<User> userOpt = userRepository.findByUsername(username);
         if (userOpt.isPresent() && userOpt.get().getPassword().equals(password)) {
