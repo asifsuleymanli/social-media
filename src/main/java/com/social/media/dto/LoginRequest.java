@@ -4,7 +4,7 @@ public class LoginRequest {
     private String username;
     private String password;
 
-    // Getter və Setter for username
+    
     public String getUsername() {
         return username;
     }
@@ -13,7 +13,7 @@ public class LoginRequest {
         this.username = username;
     }
 
-    // Getter və Setter for password
+    
     public String getPassword() {
         return password;
     }
